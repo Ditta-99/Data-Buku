@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVIGASI-->
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="login.html">FORM LOGIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="formbuku.html">INPUT BUKU</a>
+                    <a class="nav-link" href="view.php">DATA BUKU</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--FORM-->
+
+    <div class="container">
+        <form action="login.php" method="post">
+            <div class="mb-3"></div>
+            <h2 style="text-align: center;">FORM LOGIN</h2>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required> 
+            </div>
+            <button type="submit" class="btn btn-primary">LogIn</button>
+        </form>
+    </div>
+
+  <script>
+    // Cek apakah ada parameter error di URL
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("error")) {
+        alert(params.get("error")); // munculin alert dengan isi pesan error
+    }
+  </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

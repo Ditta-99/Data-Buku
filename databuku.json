@@ -1,0 +1,20 @@
+[
+    {
+        "kode": "001",
+        "judul": "Laskar Pelangi",
+        "penulis": "Andrea Hirata",
+        "tahun": "2005"
+    },
+    {
+        "kode": "002",
+        "judul": "Laut Bercerita",
+        "penulis": "Leila S. Chudori",
+        "tahun": "2017"
+    },
+    {
+        "kode": "003",
+        "judul": "Bumi Manusia",
+        "penulis": "Pramoedya Ananta Toer",
+        "tahun": "1980"
+    }
+]
